@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">hello</div>
+</body>
+
+<script>
+    
+
+$(function(){
+    function testData(){
+    var test;
+    var url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-009?Authorization=CWB-ED7050C5-A1A2-4409-B999-A4CCC6F4AFBB";
+        $.ajax({
+            type:"get",
+            url:url,
+            contentType: "application/json;charset=utf-8",
+            headers:"Access-Control-Allow-Origin:*"
+        }).then(function(data){
+            alert("OK");
+            //console.log(data);
+        })
+        // $.post(url, function(data){
+        //     console.log(data);
+        // });
+    }
+    testData();
+
+})   
+
+
+</script>
+
+</html>
+
