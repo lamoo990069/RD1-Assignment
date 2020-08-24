@@ -9,3 +9,4 @@ php golang
 
 * 自動偵測地點 （可以做看看
 
+ajax
