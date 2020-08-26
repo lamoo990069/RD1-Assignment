@@ -1,2 +1,12 @@
 CWB-ED7050C5-A1A2-4409-B999-A4CCC6F4AFBB
-https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-009?Authorization=CWB-ED7050C5-A1A2-4409-B999-A4CCC6F4AFBB&format=JSON
+
+
+一週：
+https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWB-ED7050C5-A1A2-4409-B999-A4CCC6F4AFBB&elementName=T,MaxT,Wx,PoP12h
+T 溫度（平均）
+MaxT 最高溫度
+Wx 天氣現象
+PoP12h 降雨機率
+
+Wx 天氣現象 MaxT 最高溫度 MinT 最低溫度
+
