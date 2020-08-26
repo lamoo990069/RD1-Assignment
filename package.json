@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/esther-lin069/RD1-Assignment#readme",
   "dependencies": {
-    "jquery": "^3.5.1"
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jquery": "^3.5.1",
+    "mysql": "^2.18.1"
   }
 }
