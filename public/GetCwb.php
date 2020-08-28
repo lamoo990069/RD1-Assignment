@@ -19,10 +19,13 @@ foreach($data_location as $location_k => $location_v){
                 echo $time_v['startTime']." ~ ".$time_v['endTime'];
                 echo'<br>';
                 foreach($time_v['elementValue'] as $value_k => $value_v){
-                    $value = intval($value_v['value']);
+                    $value = $value_v['value'];
+                    if(is_numeric($value) || $value == " ")
+                        $value = intval($value_v['value']);
+                    
                     echo ($value);         
                     echo"<br>-----------------------<br>";                  
-                    
+                break;
                 }
                 
             }
