@@ -69,6 +69,7 @@ class cwbPDO extends PDO{
         return (self::$DB->query($sql))->rowCount();
     }
 
+    // post: insert
     public function add($table, $args){
         $sql = "INSERT INTO `$table` SET";
         $sql .=self::getCode($table, $args);

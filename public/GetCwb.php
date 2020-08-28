@@ -1,7 +1,7 @@
 <?php 
 
 header("Content-Type:text/html; charset=utf-8");
-require('POD_data_to_db.php');
+require('PDO_data_to_db.php');
 
 //get cwb_api data
 $json = file_get_contents('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-091?Authorization=CWB-ED7050C5-A1A2-4409-B999-A4CCC6F4AFBB&elementName=MinT,MaxT,Wx,PoP12h');
@@ -40,10 +40,7 @@ function getWeatherWeek($data){
                         $list['value'] = $v;
 
                         //do upload here
-                        addData($list);
-                        print_r($list);
-                        echo "<br>";
-                
+                        addData($list);                
                 break;
                 }
                 
