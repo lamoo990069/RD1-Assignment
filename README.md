@@ -1,12 +1,10 @@
 # RD1-Assignment
 
-開發部 都有
-全端 vue
-php golang
+### (temp)主資料夾 public / php_files
 
 
 * 存取氣象局api
 
 * 自動偵測地點 （可以做看看
 
-ajax
+use: POD-Class上傳至資料庫
