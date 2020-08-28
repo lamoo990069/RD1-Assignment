@@ -9,8 +9,13 @@ $data = json_decode($json,true);
 $data_location = $data['records']['locations'][0]['location'];
 
 
-$week_pod = new cwbPDO();
 
+getWeatherWeek($data_location);
+
+function addData($data){
+    $week_pod = new cwbPDO();
+    $week_pod->add('weather_week',$data);
+}
 
 //grab data
 function getWeatherWeek($data){
@@ -35,7 +40,7 @@ function getWeatherWeek($data){
                         $list['value'] = $v;
 
                         //do upload here
-                        //insert_week($list);
+                        addData($list);
                         print_r($list);
                         echo "<br>";
                 
