@@ -9,6 +9,8 @@ Wx 天氣現象
 PoP12h 降雨機率
 
 Wx 天氣現象 MaxT 最高溫度 MinT 最低溫度
+Wx,T,AT,PoP6h(要做判斷) 圖表?
+https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-089?Authorization=CWB-ED7050C5-A1A2-4409-B999-A4CCC6F4AFBB&elementName=Wx,T,AT,PoP6h
 
 location[0]=>locationName
 location[0]=>weatherElement[]
